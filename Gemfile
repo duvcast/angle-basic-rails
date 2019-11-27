@@ -7,19 +7,20 @@ gem 'activerecord-import'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bulk_insert'
 gem 'carrierwave', '~> 1.0'
+gem 'coffee-rails', '~> 4.2'
+gem 'devise'
 gem 'gon'
 gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'rails', '5.2.1'
 gem 'rufus-scheduler'
-
 gem 'sassc-rails', '2.0.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
 
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'capybara'
   gem 'binding_of_caller'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
@@ -36,7 +37,6 @@ group :development do
   gem 'capistrano-rails-db'
   gem 'capistrano-rbenv', '~> 2.1'
   gem 'capistrano-secrets-yml', '~> 1.1.0'
-  gem 'capybara'
   gem 'roo', '~> 2.7', '>= 2.7.1'
   gem 'rubocop-rspec'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -44,8 +44,6 @@ group :development do
 end
 
 group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'

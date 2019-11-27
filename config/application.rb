@@ -47,8 +47,12 @@ module Angle
     config.assets.precompile += [
                                  # Scripts
                                  'singleview.js',
+                                 'devise/sessions.js',
+                                 'devise/registrations.js',
                                  # Stylesheets
-                                 'singleview.css'
+                                 'singleview.css',
+                                 'devise/sessions.css',
+                                 'devise/registrations.css'
                                 ]
 
   end
