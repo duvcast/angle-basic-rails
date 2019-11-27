@@ -44,15 +44,16 @@ module Angle
                                  'angle/themes/theme-h.css'
                                 ]
     # Controller assets
-    config.assets.precompile += [
-                                 # Scripts
+    config.assets.precompile += [# Scripts
                                  'singleview.js',
                                  'devise/sessions.js',
                                  'devise/registrations.js',
+                                 'devise/passwords.js',
                                  # Stylesheets
                                  'singleview.css',
                                  'devise/sessions.css',
-                                 'devise/registrations.css'
+                                 'devise/registrations.css',
+                                 'devise/passwords.css'
                                 ]
 
   end
