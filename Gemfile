@@ -18,11 +18,10 @@ gem 'sassc-rails', '2.0.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
 
-
 group :development, :test do
-  gem 'capybara'
   gem 'binding_of_caller'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'capybara'
   gem 'pry'
   gem 'rspec-rails'
 end
@@ -48,4 +47,3 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
-
