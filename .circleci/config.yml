@@ -21,6 +21,12 @@ jobs:
         name: Restore bundle cache
         key: angle-basic-rails-{{ checksum "Gemfile.lock" }}
 
+      - run:
+          name: install dependencies
+          command: |
+            gem update --system
+            gem install bundler
+
       # Bundle install dependencies
       - run: bundle install --path vendor/bundle
 
