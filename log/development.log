@@ -1660,3 +1660,52 @@ Processing by ApiController#i18n as JSON
 Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.18.0.1 at 2019-12-02 21:58:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (23.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Started GET "/users/sign_in" for 172.18.0.1 at 2019-12-02 21:58:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2783.1ms)
+  Rendered layouts/partials/_topnavbar.html.erb (2.0ms)
+  Rendered layouts/partials/_sidebar.html.erb (1.8ms)
+  Rendered layouts/partials/_offsidebar.html.erb (15.4ms)
+  Rendered layouts/partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 2978ms (Views: 2950.8ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/api/i18n/site-en.json" for 172.18.0.1 at 2019-12-02 21:58:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApiController#i18n as JSON
+  Parameters: {"locale"=>"site-en"}
+  Rendering app/assets/i18n/site-en.json
+  Rendered app/assets/i18n/site-en.json (0.4ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.18.0.1 at 2019-12-02 22:04:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/partials/_topnavbar.html.erb (1.4ms)
+  Rendered layouts/partials/_sidebar.html.erb (0.7ms)
+  Rendered layouts/partials/_offsidebar.html.erb (9.9ms)
+  Rendered layouts/partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 133ms (Views: 132.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/i18n/site-en.json" for 172.18.0.1 at 2019-12-02 22:04:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApiController#i18n as JSON
+  Parameters: {"locale"=>"site-en"}
+  Rendering app/assets/i18n/site-en.json
+  Rendered app/assets/i18n/site-en.json (0.3ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+

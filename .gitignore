@@ -56,6 +56,6 @@ db/errors/
 vendor/assets/bower_components/*
 .vscode
 
-/loc
+/log
 /spec
 /tmp
