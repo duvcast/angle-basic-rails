@@ -46,14 +46,15 @@ module Angle
     # Controller assets
     config.assets.precompile += [# Scripts
                                  'singleview.js',
-                                 'devise/sessions.js',
-                                 'devise/registrations.js',
-                                 'devise/passwords.js',
+                                 'users/sessions.js',
+                                 'users/registrations.js',
+                                 'users/passwords.js',
                                  # Stylesheets
                                  'singleview.css',
                                  'devise/sessions.css',
-                                 'devise/registrations.css',
-                                 'devise/passwords.css'
+                                 'users/sessions.css',
+                                 'users/registrations.css',
+                                 'users/passwords.css'
                                 ]
 
   end
