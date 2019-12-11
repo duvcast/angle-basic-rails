@@ -1,29 +1,63 @@
-<h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+<div class="block-center mt-4 wd-xl">
+   <!-- START card-->
+   <div class="card card-flat">
+      <div class="card-header text-center bg-dark">
+         <a href="#">
+            <img class="block-center" src="<%= image_path('angle/logo.png') %>" alt="Image" />
+         </a>
+      </div>
+      <div class="card-body">
+         <p class="text-center py-2">Registro de Usuarios</p>
+         <form class="mb-3" action="">
+            <div class="form-group">
+               <label class="text-muted" for="signupInputEmail1">Correo Electronico</label>
+               <div class="input-group with-focus">
+                  <input class="form-control border-right-0" id="signupInputEmail1" name="email" type="email" placeholder="Enter email" autocomplete="off" required="required" />
+                  <div class="input-group-append">
+                     <span class="input-group-text text-muted bg-transparent border-left-0">
+                         <em class="fa fa-envelope"></em>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div class="form-group">
+               <label class="text-muted" for="signupInputPassword1">Contraseña</label>
+               <div class="input-group with-focus">
+                  <input class="form-control border-right-0" id="signupInputPassword1" name="password" type="password" placeholder="Password" autocomplete="off" required="required" />
+                  <div class="input-group-append">
+                     <span class="input-group-text text-muted bg-transparent border-left-0">
+                         <em class="fa fa-lock"></em>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div class="form-group">
+               <label class="text-muted" for="signupInputRePassword1">Repita Contraseña</label>
+               <div class="input-group with-focus">
+                  <input class="form-control border-right-0" id="signupInputRePassword1" name="password_confirmation" type="password" placeholder="Retype Password" autocomplete="off" required="required" data-parsley-equalto="#signupInputPassword1" />
+                  <div class="input-group-append">
+                     <span class="input-group-text text-muted bg-transparent border-left-0">
+                         <em class="fa fa-lock"></em>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div class="checkbox c-checkbox mt-0">
+               <label>
+                  <input type="checkbox" value="" required="required" name="agreed" />
+                  <span class="fa fa-check"></span>I agree with the<a class="ml-1" href="#">terms</a>
+               </label>
+            </div>
+            <button class="btn btn-block btn-primary mt-3" type="submit">Crear Cuenta</button>
+         </form>
+         <p class="pt-3 text-center">¿Ya tiene cuenta?</p><a class="btn btn-block btn-secondary" href="/login">Iniciar Sesion</a>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+      </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+   </div>
 
-<%= render "devise/shared/links" %>
+
+</div>
