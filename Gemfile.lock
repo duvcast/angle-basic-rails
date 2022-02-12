@@ -187,7 +187,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (3.0.3)
-    puma (3.12.2)
+    puma (4.3.11)
+      nio4r (~> 2.0)
     raabro (1.1.6)
     rack (2.0.6)
     rack-test (1.1.0)
@@ -330,7 +331,7 @@ DEPENDENCIES
   gon
   pg
   pry
-  puma (~> 3.12)
+  puma (~> 4.3)
   rails (= 5.2.1)
   roo (~> 2.7, >= 2.7.1)
   rspec-rails
